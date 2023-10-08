@@ -15,14 +15,13 @@
   }
 }
 .start > img {
-  margin-top: 50px;
+  margin-top: 73px;
   margin-left: 15px;
   width: 282px;
   height: 243px;
   flex-shrink: 0;
 }
 .start > h1 {
-  text-transform: capitalize;
   font-family: "Tahoma bolder";
   color: #100101;
   font-size: 33px;
@@ -37,7 +36,7 @@
   align-items: center;
   gap: 20px;
   width: 100%;
-  @include tablet-size{
+  @include tablet-size {
     width: 75%;
   }
 }
@@ -70,4 +69,58 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.start .line-container {
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+}
+.line-container hr {
+  background: #d4bfbf;
+  height: 1px;
+  width: 80%;
+  @include tablet-size {
+    width: 65%;
+  }
+}
+.line-container p {
+  position: absolute;
+  color: #d4bfbf;
+  font-size: 22px;
+  top: -27px;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-inline: 15px;
+}
+
+.start .sign-in {
+  margin-top: 30px;
+  width: 95%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #7210ff;
+  color: #f9f2f2;
+  font-size: 21px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  @include tablet-size {
+    width: 70%;
+  }
+}
+
+.start .footer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 17px;
+}
+.footer p {
+  color: #d4bfbf;
+}
+.footer :nth-child(2) {
+  text-decoration: none;
+  color: #7210ff;
 }
