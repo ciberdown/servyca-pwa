@@ -1,0 +1,16 @@
+@import "./default-styles/media-queries";
+@import "./default-styles/fonts.scss";
+
+* {
+  margin: none;
+  padding: none;
+}
+.app {
+  font-family: "Tahoma";
+  @include desktop-size {
+    display: none;
+  }
+  @include lower-sizes {
+    display: none;
+  }
+}
