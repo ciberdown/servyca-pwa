@@ -1,10 +1,18 @@
 @import "../default-styles/_fonts.scss";
+@import "../default-styles/media-queries";
 
 .start {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+
+  @include desktop-size {
+    display: none;
+  }
+  @include lower-sizes {
+    display: none;
+  }
 }
 .start > img {
   margin-top: 50px;
@@ -29,9 +37,12 @@
   align-items: center;
   gap: 20px;
   width: 100%;
+  @include tablet-size{
+    width: 75%;
+  }
 }
 .social-media-sign-in {
-    cursor: pointer;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: start;
