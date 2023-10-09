@@ -1,8 +1,8 @@
 import Link from "next/link";
-import SocialSignIn from "../components/socialSignIn/SocialSignIn";
-import LineContainer from "../components/lineContainer/lineContainer";
-import "./styles.scss";
-import CustomStartBtn from "../components/custom-start-btn/CustomStartBtn";
+import SocialSignIn from "../socialSignIn/SocialSignIn";
+import LineContainer from "../lineContainer/lineContainer";
+import "./start.scss";
+import CustomStartBtn from "../custom-start-btn/CustomStartBtn";
 
 function Start() {
   return (

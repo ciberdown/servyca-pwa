@@ -1,6 +1,6 @@
 import "./app.scss";
 import PwaWarning from "./components/pwa-warning";
-import Start from "./start/page";
+import Start from "./components/start/start";
 
 export default function Home() {
   return (
