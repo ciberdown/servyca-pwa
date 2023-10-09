@@ -1,0 +1,19 @@
+@import "../../default-styles/media-queries";
+
+.sign-in-btn {
+  font-family: "Tahoma";
+  display: block;
+  margin-top: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #7210ff;
+  color: #f9f2f2;
+  font-size: 21px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  @include tablet-size {
+    width: 80%;
+  }
+}

@@ -1,12 +1,19 @@
 @import "../default-styles/_fonts.scss";
 @import "../default-styles/media-queries";
 
+* {
+  margin: 0;
+  padding: 0;
+}
 .start {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
-
+  padding: 20px;
+  @include tablet-size {
+    width: 80%;
+  }
   @include desktop-size {
     display: none;
   }
@@ -28,6 +35,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin: 20px;
+  margin-top: 10px;
 }
 
 .social-container {
@@ -36,86 +45,16 @@
   align-items: center;
   gap: 20px;
   width: 100%;
-  @include tablet-size {
-    width: 75%;
-  }
-}
-.social-media-sign-in {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  border-radius: 18px;
-  border: 1px solid #707070;
-  background: #fff;
-  height: 58px;
-  flex-shrink: 0;
-  gap: 10px;
-  width: 90%;
-  min-width: 300px;
-  padding-left: 10px;
-}
-
-.social-media-sign-in img {
-  width: 31px;
-  height: 40.486px;
-  flex-shrink: 0;
-  margin-top: 8px;
-}
-
-.social-media-sign-in h3 {
-  color: #707070;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.start .line-container {
-  width: 100%;
-  margin-top: 30px;
-  position: relative;
-}
-.line-container hr {
-  background: #d4bfbf;
-  height: 1px;
-  width: 80%;
-  @include tablet-size {
-    width: 65%;
-  }
-}
-.line-container p {
-  position: absolute;
-  color: #d4bfbf;
-  font-size: 22px;
-  top: -27px;
-  background-color: white;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-inline: 15px;
-}
-
-.start .sign-in {
-  margin-top: 30px;
-  width: 95%;
-  box-sizing: border-box;
-  border-radius: 20px;
-  background-color: #7210ff;
-  color: #f9f2f2;
-  font-size: 21px;
-  text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  @include tablet-size {
-    width: 70%;
-  }
 }
 
 .start .footer {
+  font-family: "Tahoma";
   display: flex;
   align-items: center;
   gap: 5px;
   font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .footer p {
   color: #d4bfbf;

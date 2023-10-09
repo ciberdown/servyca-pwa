@@ -1,4 +1,4 @@
-import "./styles.scss";
+import "./soc-sign-in.scss";
 
 function SocialSignIn({ icon_src, text }) {
   return (

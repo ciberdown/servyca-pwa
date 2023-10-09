@@ -1,0 +1,33 @@
+@import "../../default-styles/media-queries";
+
+.input-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.input-container img {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  top: 21px;
+  left: 9px;
+
+}
+
+.input-container input {
+  height: 58px;
+  border-radius: 20px;
+  background: #f6f8f2;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  margin-bottom: 20px;
+  // @include tablet-size {
+  //   width: 90%;
+  // }
+}
+.input-container input::placeholder {
+  padding-left: 35px;
+  color: #b9b4b4;
+  font-size: 15px;
+}

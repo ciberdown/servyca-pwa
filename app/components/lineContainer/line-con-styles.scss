@@ -1,0 +1,31 @@
+@import "../../default-styles/media-queries";
+@import "../../default-styles/fonts";
+
+.line-container {
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  font-family: "Tahoma";
+  justify-content: center;
+}
+.line-container hr {
+  background: #d4bfbf;
+  border: none;
+  height: 1px;
+  width: 90%;
+  @include tablet-size {
+    width: 65%;
+  }
+}
+.line-container p {
+  position: absolute;
+  white-space: nowrap;
+  color: #d4bfbf;
+  font-size: 22px;
+  top: -15px;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-inline: 15px;
+}

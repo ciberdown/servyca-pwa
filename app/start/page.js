@@ -1,7 +1,8 @@
 import Link from "next/link";
-import SocialSignIn from "./SocialSignIn";
-import LineContainer from "./lineContainer";
+import SocialSignIn from "../components/socialSignIn/SocialSignIn";
+import LineContainer from "../components/lineContainer/lineContainer";
 import "./styles.scss";
+import CustomStartBtn from "../components/custom-start-btn/CustomStartBtn";
 
 function Start() {
   return (
@@ -24,11 +25,9 @@ function Start() {
         />
       </section>
 
-      <LineContainer />
+      <LineContainer text="or" />
 
-      <Link className="sign-in" href="/start/login">
-        Sign in with password
-      </Link>
+      <CustomStartBtn text="Sign in with password" />
 
       <section className="footer">
         <p>Don't have an account?</p>

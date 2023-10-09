@@ -1,0 +1,33 @@
+.remember-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+.remember-con .foo {
+  position: relative;
+}
+
+.remember-con input {
+  width: 19px;
+  height: 22px;
+  transform: rotate(-1deg);
+  border-radius: 5px;
+  border: 5px solid #7210ff;
+  opacity: 0.68;
+  background: #fff;
+
+  -webkit-appearance: none;
+  -o-appearance: none;
+}
+
+.remember-con img {
+  width: 16px;
+  position: absolute;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
