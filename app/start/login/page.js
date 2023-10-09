@@ -4,13 +4,14 @@ import CustomCheckbox from "@/app/components/customCheckbox/CustomCheckbox";
 import CustomInput from "@/app/components/customInput/customInput";
 import Link from "next/link";
 import LineContainer from "@/app/components/lineContainer/lineContainer";
+import Back from "@/app/components/back/back";
 
 function Login() {
   return (
     <div className="sign-up">
-      <Link href="/start">
-        <img className="back-icon" src="/assets/images/image 1.png" />
-      </Link>
+
+      <Back />
+
       <h1>Login to your Account</h1>
 
       <div className="input-containers">
@@ -21,7 +22,7 @@ function Login() {
         />
       </div>
 
-      <CustomCheckbox text="remember me" />
+      <CustomCheckbox text="remember me" style={{marginTop:'0'}}/>
 
       <section className="btn-foo">
         <CustomStartBtn style={{ marginBottom: "40px" }} text="sign in" />
@@ -48,8 +49,8 @@ function Login() {
 
       <div className="foot-last">
         <p>Already have an account</p>
-        <Link className="mox" href="/start/login">
-          Sign in
+        <Link className="mox" href="/start/sign-up">
+          Sign up
         </Link>
       </div>
     </div>

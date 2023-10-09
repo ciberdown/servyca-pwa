@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function CustomStartBtn({ text, style = null }) {
   return (
-    <Link style={style} className="sign-in-btn" href="/start/login">
+    <Link style={style} className="sign-in-btn" href="/home">
       {text}
     </Link>
   );

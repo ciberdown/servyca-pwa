@@ -4,13 +4,12 @@ import CustomCheckbox from "@/app/components/customCheckbox/CustomCheckbox";
 import CustomStartBtn from "@/app/components/custom-start-btn/CustomStartBtn";
 import LineContainer from "@/app/components/lineContainer/lineContainer";
 import Link from "next/link";
+import Back from "@/app/components/back/back";
 
 function SignUp() {
   return (
     <div className="sign-up">
-      <Link href="/">
-        <img className="back-icon" src="/assets/images/image 1.png" />
-      </Link>
+      <Back />
       <h1>create your account</h1>
 
       <div className="input-containers">

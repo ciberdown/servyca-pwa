@@ -1,0 +1,12 @@
+@import "../default-styles/fonts";
+@import "../default-styles/media-queries";
+
+* {
+  font-family: "Tahoma";
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  padding-inline: 20px;
+}
