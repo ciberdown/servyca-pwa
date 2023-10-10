@@ -5,8 +5,65 @@
   font-family: "Tahoma";
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .home {
   padding-inline: 20px;
+  @include lower-sizes {
+    display: none;
+  }
+  @include desktop-size {
+    display: none;
+  }
+}
+
+.home > img {
+  width: 100%;
+  background-size: contain;
+}
+.input-con {
+  position: relative;
+  margin-top: 20px;
+}
+.input-con input {
+  border: none;
+  border-radius: 14px;
+  border: 1px solid rgba(163, 150, 150, 0);
+  opacity: 0.66;
+  background: rgba(191, 191, 191, 0.33);
+  height: 44px;
+  width: 100%;
+  padding-left: 30px;
+  &::placeholder {
+    color: #07030c42;
+    font-family: Tahoma;
+    font-size: 12px;
+    letter-spacing: 0.672px;
+  }
+}
+.input-con img {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 10px;
+  left: 10px;
+}
+
+.special-con {
+  margin-top: 18px;
+  margin-bottom: 20px;
+  padding-inline: 5px;
+}
+.special-con .head-l {
+  color: #07030c;
+  font-family: "Tahoma bold";
+  font-size: 16px;
+  letter-spacing: 0.896px;
+}
+.special-con .see-all {
+  color: #7210ff;
+  font-family: "Tahoma bold";
+  font-size: 12px;
+  letter-spacing: 0.672px;
 }

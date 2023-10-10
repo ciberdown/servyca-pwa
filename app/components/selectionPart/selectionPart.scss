@@ -1,0 +1,21 @@
+$color: #7210ff;
+
+.item {
+  text-transform: capitalize;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 7px;
+  padding-inline: 20px;
+  font-size: 13px;
+}
+
+.none-selected {
+  color: $color;
+  border: 2px solid $color;
+}
+
+.selected {
+  color: white;
+  background-color: $color;
+  border: 2px solid $color;
+}

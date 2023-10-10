@@ -1,0 +1,47 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.profile #profile-img {
+  width: 39px;
+  border-radius: 50%;
+}
+
+.left-prof {
+  display: flex;
+  flex: 8;
+  align-items: center;
+  gap: 8px;
+}
+
+.prof-container p {
+  color: #d4bfbf76;
+  font-size: 13px;
+  letter-spacing: 0.689px;
+  margin-bottom: 2px;
+}
+.prof-container h1 {
+  font-family: "Tahoma bold";
+  color: #07030c;
+  font-size: 15px;
+  letter-spacing: 0.84px;
+}
+
+.right-prof {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.right-prof :nth-child(1) {
+  width: 15px;
+  height: 18px;
+}
+
+.right-prof :nth-child(2) {
+  width: 18px;
+  height: 20px;
+}

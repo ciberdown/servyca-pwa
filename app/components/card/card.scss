@@ -1,0 +1,66 @@
+@import "../../default-styles/fonts";
+@import "../../default-styles/media-queries";
+
+$color: #7210ff;
+
+.my-card-container {
+  border: 1px solid #d4bfbf7b;
+  border-radius: 16px;
+  padding: 8px;
+  padding-inline: 18px;
+  gap: 20px;
+  width: 100%;
+}
+
+.my-card-container .prof-card {
+  width: 50px;
+  height: 20px;
+  border-radius: 14px;
+  flex: 4;
+}
+.my-card-container .center {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex: 14;
+  @include tablet-size {
+    flex: 24;
+  }
+}
+.bookmark-icon {
+  align-self: start;
+  flex: 1;
+}
+
+.name {
+  color: #baa;
+  font-size: 10px;
+  letter-spacing: 0.66px;
+  text-transform: capitalize;
+}
+
+.job {
+  color: #0f0e0e;
+  font-family: "Tahoma bold";
+  font-size: 14px;
+  letter-spacing: 0.924px;
+  text-transform: capitalize;
+}
+.payment {
+  color: #7210ff;
+  font-family: "Tahoma bold";
+  font-size: 14px;
+}
+
+.foo-card {
+  color: #baa;
+  font-size: 10px;
+  width: 74px;
+  margin-left: 20px;
+}
+.hr-line {
+  width: 1px;
+  margin-top: 2px;
+  height: 10px;
+  background-color: #baa;
+}

@@ -27,7 +27,7 @@ function Start() {
 
       <LineContainer text="or" />
 
-      <CustomStartBtn text="Sign in with password" />
+      <CustomStartBtn text="Sign in with password" reference="/start/login" />
 
       <section className="footer">
         <p>Don't have an account?</p>
