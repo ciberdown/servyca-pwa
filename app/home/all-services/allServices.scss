@@ -1,0 +1,18 @@
+@import "../../default-styles/fonts";
+@import "../../default-styles/media-queries";
+
+.all-services {
+  padding: 20px;
+  font-family: "Tahoma";
+  @include lower-sizes {
+    display: none;
+  }
+}
+
+.all-services .head-mb-foo {
+  font-family: "Tahoma bold";
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.792px;
+  text-transform: capitalize;
+}

@@ -5,8 +5,8 @@ import SelectionPart from "../components/selectionPart/SelectionPart";
 import "./home.scss";
 import ServicesPart from "../components/servicesPart/Services";
 import Card from "../components/card/Card";
-import Navbar from "../components/navbar/navbar";
 import { cardProfiles } from "@/public/constants/cardInfos";
+import Link from "next/link";
 
 function Home() {
   //you need sign in validation here!
@@ -27,14 +27,18 @@ function Home() {
 
       <FlexBox className="special-con">
         <h1 className="head-l">Special offers</h1>
-        <p className="see-all">See All</p>
+        <Link className="link" href="/home">
+          <p className="see-all">See All</p>
+        </Link>
       </FlexBox>
 
       <img src="/assets/images/untitled233.png" alt="off today special" />
 
       <FlexBox className="special-con">
         <h1 className="head-l">Services</h1>
-        <p className="see-all">See All</p>
+        <Link className="link" href="/home/all-services">
+          <p className="see-all">See All</p>
+        </Link>
       </FlexBox>
 
       <ServicesPart />

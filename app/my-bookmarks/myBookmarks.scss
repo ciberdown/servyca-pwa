@@ -9,9 +9,15 @@
 }
 .my-bookmarks {
   padding-inline: 20px;
+  @include lower-sizes {
+    display: none;
+  }
+  @include desktop-size {
+    display: none;
+  }
 }
 .my-bookmarks .head-mb-img-moz {
-    width: 100%;
+  width: 100%;
   @include tablet-size {
     display: none;
   }
@@ -23,4 +29,3 @@
   font-size: 18px;
   letter-spacing: 0.792px;
 }
-

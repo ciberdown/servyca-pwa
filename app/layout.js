@@ -1,3 +1,6 @@
+import PwaWarning from "./components/pwa-warning";
+import "./app.scss";
+import FlexBox from "./components/flex/flexBox";
 
 export const metadata = {
   title: "Create Next App",
@@ -7,8 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <FlexBox justifyContent="center" style={{ width: "100%" }}>
+        <PwaWarning />
+      </FlexBox>
       <body>{children}</body>
-      
     </html>
   );
 }

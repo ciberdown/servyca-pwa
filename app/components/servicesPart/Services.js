@@ -1,12 +1,11 @@
-import React from "react";
 import GirdSystem from "../grid/girdSystem";
 import ServiceItem from "@/app/components/servicesPart/service-item";
 import { serviceItemsConst } from "@/public/constants/serviceConstants";
 
-function ServicesPart() {
+function ServicesPart({ marginTop }) {
   const serviceItems = serviceItemsConst;
   return (
-    <GirdSystem gridTemplateColumns={4} rowGap="35px">
+    <GirdSystem rowGap="35px" style={{ marginTop }}>
       <ServiceItem
         imgSrc="image 8.png"
         bColor="#7410ff24"

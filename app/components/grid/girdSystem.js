@@ -1,8 +1,7 @@
-import React from "react";
+import "./grid.scss";
 
 function GirdSystem({
   children,
-  gridTemplateColumns,
   gridTemplateRows = null,
   style = null,
   rowGap = null,
@@ -12,7 +11,7 @@ function GirdSystem({
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: `repeat(${gridTemplateColumns},1fr)`,
+        gridTemplateColumns: `repeat(auto-fit, minmax(100px, 1fr))`,
         gridTemplateRows,
         columnGap,
         rowGap,

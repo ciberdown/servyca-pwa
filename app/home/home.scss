@@ -13,6 +13,9 @@
   @include lower-sizes {
     display: none;
   }
+  @include tablet-size {
+    padding-inline: 10%;
+  }
   @include desktop-size {
     display: none;
   }
@@ -26,6 +29,9 @@
 .home > img {
   width: 100%;
   background-size: contain;
+}
+.link {
+  text-decoration: none;
 }
 .input-con {
   position: relative;
