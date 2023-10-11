@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./profile.scss";
 
 function Profile({ style = null }) {
@@ -17,8 +18,12 @@ function Profile({ style = null }) {
       </div>
 
       <div className="right-prof">
-        <img src="./assets/images/image 5.png" alt="tags" />
-        <img src="./assets/images/image 6.png" alt="alert" />
+        <Link href="/my-bookmarks">
+          <img src="./assets/images/image 5.png" alt="tags" />
+        </Link>
+        <Link href="/notifications">
+          <img src="./assets/images/image 6.png" alt="alert" />
+        </Link>
       </div>
     </div>
   );

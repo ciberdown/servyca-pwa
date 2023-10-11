@@ -10,6 +10,7 @@ $color: #7210ff;
   padding-inline: 18px;
   gap: 20px;
   width: 100%;
+  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.292);
 }
 
 .my-card-container .prof-card {
@@ -63,4 +64,27 @@ $color: #7210ff;
   margin-top: 2px;
   height: 10px;
   background-color: #baa;
+}
+
+.notif-card {
+  border: 1px solid #d4bfbf7b;
+  border-radius: 16px;
+  padding: 8px;
+  padding-inline: 18px;
+  height: 98px;
+  gap: 20px;
+  width: 100%;
+  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.292);
+}
+.notif-card .title-card-notif {
+  color: #0f0101;
+  font-family: "Tahoma bold";
+  font-size: 14px;
+  letter-spacing: 0.77px;
+}
+
+.notif-card .info-card-notif {
+  color: #d4bfbf;
+  font-size: 12px;
+  letter-spacing: 0.66px;
 }

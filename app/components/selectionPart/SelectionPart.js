@@ -4,11 +4,11 @@ import FlexBox from "../flex/flexBox";
 import "./selectionPart.scss";
 import { useState } from "react";
 
-function SelectionPart() {
+function SelectionPart({ marginTop = null }) {
   const [selcetedIndex, setSelcetedIndex] = useState(0);
   const serviceItems = serviceItemsConst;
   return (
-    <FlexBox gap="10px" style={{ overflowX: "scroll" }}>
+    <FlexBox gap="10px" style={{ overflowX: "scroll", marginTop }}>
       <p
         onClick={() => setSelcetedIndex(0)}
         className={selcetedIndex === 0 ? "item selected" : "item none-selected"}

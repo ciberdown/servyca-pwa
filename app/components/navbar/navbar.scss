@@ -1,0 +1,43 @@
+@import "../../default-styles/fonts";
+@import "../../default-styles/media-queries";
+
+$back-color: #f2eded;
+$none-selected-color: #d4bfbf;
+$selected-color: #7210ff;
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: $back-color;
+  padding: 10px;
+  @include tablet-size {
+    padding-inline: 15%;
+  }
+}
+
+.navbar .nav-item {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.nav-item > img {
+  width: 16px;
+  height: 15px;
+}
+.nav-item > p {
+  font-family: "Tahoma bold";
+  font-size: 9px;
+  letter-spacing: 0.171px;
+  text-transform: capitalize;
+}
+
+.nav-item > .p-selected {
+  color: $selected-color;
+}
+.nav-item > .p-none-selected {
+  color: $none-selected-color;
+}

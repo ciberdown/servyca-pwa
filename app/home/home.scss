@@ -17,6 +17,11 @@
     display: none;
   }
 }
+.home > .head-home-moz {
+  @include tablet-size {
+    display: none;
+  }
+}
 
 .home > img {
   width: 100%;

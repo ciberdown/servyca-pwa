@@ -14,7 +14,11 @@ function Home() {
   const profiles = cardProfiles;
   return (
     <div className="home">
-      <img src="/assets/images/untitled.png" alt="header" />
+      <img
+        className="head-home-moz"
+        src="/assets/images/untitled.png"
+        alt="header"
+      />
       <Profile />
       <section className="input-con">
         <input type="text" placeholder="Search" />
@@ -45,12 +49,10 @@ function Home() {
       <SelectionPart />
 
       <FlexBox flexDirection="column" gap="20px" style={{ marginTop: "20px" }}>
-        <Card profile={profiles[0]} />
-        <Card profile={profiles[1]} />
-        <Card profile={profiles[2]} />
+        <Card data={profiles[0]} index={0} />
+        <Card data={profiles[1]} index={1} />
+        <Card data={profiles[2]} index={2} />
       </FlexBox>
-
-      <Navbar />
     </div>
   );
 }
