@@ -10,13 +10,7 @@ function MyBookmarks() {
   const data = cardProfiles;
   return (
     <div className="my-bookmarks">
-
-      <FlexBox
-        style={{ marginTop: "20px" }}
-        justifyContent="start"
-        alignItems="center"
-        gap="20px"
-      >
+      <FlexBox justifyContent="start" alignItems="center" gap="20px">
         <Back
           href="/home"
           style={{

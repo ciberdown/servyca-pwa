@@ -1,7 +1,7 @@
 import React from "react";
 import FlexBox from "../flex/flexBox";
 
-function ServiceItem({ text, imgSrc, bColor, opacity = 1, width = "27px" }) {
+function ServiceItem({ text, imgSrc, bColor, width = "27px" }) {
   return (
     <FlexBox flexDirection="column" gap="8px">
       <div

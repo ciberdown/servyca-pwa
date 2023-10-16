@@ -3,15 +3,18 @@
 import { useState } from "react";
 import FlexBox from "../flex/flexBox";
 import "./card.scss";
-import { cardProfiles } from "@/public/constants/cardInfos";
 
 function Card({ data, style = null, index }) {
+  if (!index) {
+    console.error("index is null in card card section");
+    return;
+  }
   const [bookmarked, setBookmarked] = useState(data.bookmarked);
 
   const clickBookmarkHandler = () => {
-    cardProfiles[index].bookmarked = !bookmarked;
     setBookmarked((prev) => !prev);
   };
+
   return (
     <FlexBox className="my-card-container" style={style}>
       <img
@@ -34,7 +37,7 @@ function Card({ data, style = null, index }) {
       </div>
 
       <img
-        onClick={() => clickBookmarkHandler(index)}
+        onClick={clickBookmarkHandler}
         className="bookmark-icon"
         src={
           bookmarked

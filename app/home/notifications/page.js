@@ -8,7 +8,6 @@ function Notifications() {
   return (
     <div className="notifications-con">
       <FlexBox
-        style={{ marginTop: "20px" }}
         justifyContent="start"
         alignItems="center"
         gap="20px"

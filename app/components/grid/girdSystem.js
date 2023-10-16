@@ -11,7 +11,7 @@ function GirdSystem({
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: `repeat(auto-fit, minmax(100px, 1fr))`,
+        gridTemplateColumns: `repeat(auto-fit, minmax(80px, 1fr))`,
         gridTemplateRows,
         columnGap,
         rowGap,

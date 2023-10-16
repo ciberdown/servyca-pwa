@@ -1,0 +1,22 @@
+@import "../../default-styles/fonts";
+@import "../../default-styles/default-margins";
+@import "../../default-styles/media-queries";
+
+* {
+  @include all-margin-padding-0;
+}
+.most-popular-services {
+  margin-top: $default-margin-top;
+  padding-inline: $default-padding-inline-mobile;
+  @include tablet-size {
+    padding-inline: $default-padding-inline-tablet;
+  }
+}
+
+.most-popular-services .head-mb-foo {
+  text-transform: capitalize;
+  font-family: "Tahoma bold";
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.792px;
+}

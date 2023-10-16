@@ -14,7 +14,6 @@ function Home() {
   const profiles = cardProfiles;
   return (
     <div className="home">
-
       <Profile />
       <section className="input-con">
         <input type="text" placeholder="Search" />
@@ -23,7 +22,7 @@ function Home() {
 
       <FlexBox className="special-con">
         <h1 className="head-l">Special offers</h1>
-        <Link className="link" href="/home">
+        <Link className="link" href="/home/special-offers">
           <p className="see-all">See All</p>
         </Link>
       </FlexBox>
@@ -43,15 +42,27 @@ function Home() {
 
       <FlexBox className="special-con">
         <h1 className="head-l">Most Popular Services</h1>
-        <p className="see-all">See All</p>
+        <Link
+          style={{ textDecoration: "none" }}
+          href="/home/most-popular-services"
+        >
+          <p className="see-all">See All</p>
+        </Link>
       </FlexBox>
 
       <SelectionPart />
 
-      <FlexBox flexDirection="column" gap="20px" style={{ marginTop: "20px" }}>
-        <Card data={profiles[0]} index={0} />
+      <FlexBox
+        flexDirection="column"
+        gap="20px"
+        style={{
+          marginTop: "20px",
+          marginBottom: "100px",
+        }}
+      >
         <Card data={profiles[1]} index={1} />
         <Card data={profiles[2]} index={2} />
+        <Card data={profiles[3]} index={3} />
       </FlexBox>
     </div>
   );
