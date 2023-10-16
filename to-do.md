@@ -1,0 +1,1 @@
+adding default padding and margins scss file
