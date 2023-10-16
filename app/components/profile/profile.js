@@ -18,10 +18,10 @@ function Profile({ style = null }) {
       </div>
 
       <div className="right-prof">
-        <Link href="/home/my-bookmarks">
+        <Link href="/my-bookmarks">
           <img src="./assets/images/image 5.png" alt="tags" />
         </Link>
-        <Link href="/home/notifications">
+        <Link href="/notifications">
           <img src="./assets/images/image 6.png" alt="alert" />
         </Link>
       </div>

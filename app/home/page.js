@@ -22,7 +22,7 @@ function Home() {
 
       <FlexBox className="special-con">
         <h1 className="head-l">Special offers</h1>
-        <Link className="link" href="/home/special-offers">
+        <Link className="link" href="/special-offers">
           <p className="see-all">See All</p>
         </Link>
       </FlexBox>
@@ -31,7 +31,7 @@ function Home() {
 
       <FlexBox className="special-con">
         <h1 className="head-l">Services</h1>
-        <Link className="link" href="/home/all-services">
+        <Link className="link" href="all-services">
           <p className="see-all">See All</p>
         </Link>
       </FlexBox>
@@ -44,7 +44,7 @@ function Home() {
         <h1 className="head-l">Most Popular Services</h1>
         <Link
           style={{ textDecoration: "none" }}
-          href="/home/most-popular-services"
+          href="/most-popular-services"
         >
           <p className="see-all">See All</p>
         </Link>

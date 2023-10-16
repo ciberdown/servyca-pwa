@@ -1,10 +1,10 @@
 import React from "react";
-import FlexBox from "../../components/flex/flexBox";
-import Back from "../../components/back/back";
+import FlexBox from "../components/flex/flexBox";
+import Back from "../components/back/back";
 import "./myBookmarks.scss";
-import SelectionPart from "../../components/selectionPart/SelectionPart";
+import SelectionPart from "../components/selectionPart/SelectionPart";
 import { cardProfiles } from "@/public/constants/cardInfos";
-import Card from "../../components/card/Card";
+import Card from "../components/card/Card";
 
 function MyBookmarks() {
   const data = cardProfiles;
