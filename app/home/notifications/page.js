@@ -1,17 +1,12 @@
 import { notifs } from "@/public/constants/notifications";
-import Back from "../components/back/back";
-import FlexBox from "../components/flex/flexBox";
+import Back from "../../components/back/back";
+import FlexBox from "../../components/flex/flexBox";
 import "./notifications.scss";
-import NotifCard from "../components/card/notifCard";
+import NotifCard from "../../components/card/notifCard";
 
 function Notifications() {
   return (
     <div className="notifications-con">
-      <img
-        className="head-mb-img-moz"
-        src="/assets/images/untitled.png"
-        alt="mobile header"
-      />
       <FlexBox
         style={{ marginTop: "20px" }}
         justifyContent="start"

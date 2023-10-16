@@ -1,10 +1,21 @@
 @import "../../default-styles/fonts";
 @import "../../default-styles/media-queries";
+@import "../../default-styles/default-margins";
+
+.mt-default {
+  margin-top: $default-margin-top;
+}
 
 .all-services {
-  padding: 20px;
+  padding-inline: $default-padding-inline-mobile;
   font-family: "Tahoma";
   @include lower-sizes {
+    display: none;
+  }
+  @include tablet-size {
+    padding-inline: $default-padding-inline-tablet;
+  }
+  @include desktop-size {
     display: none;
   }
 }

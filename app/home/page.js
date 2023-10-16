@@ -14,11 +14,7 @@ function Home() {
   const profiles = cardProfiles;
   return (
     <div className="home">
-      <img
-        className="head-home-moz"
-        src="/assets/images/untitled.png"
-        alt="header"
-      />
+
       <Profile />
       <section className="input-con">
         <input type="text" placeholder="Search" />

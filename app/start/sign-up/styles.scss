@@ -1,5 +1,6 @@
 @import "../../default-styles/fonts";
 @import "../../default-styles/media-queries";
+@import "../../default-styles/default-margins";
 
 * {
   margin: 0;
@@ -8,18 +9,17 @@
 }
 
 .sign-up {
-  padding: 20px;
+  padding: $default-padding-inline-mobile;
   @include lower-sizes {
     display: none;
   }
   @include tablet-size {
-    padding-inline: 10%;
+    padding-inline: $default-padding-inline-tablet;
   }
   @include desktop-size {
     display: none;
   }
 }
-
 
 .sign-up h1 {
   margin-top: 41px;
@@ -40,7 +40,7 @@
   margin-bottom: 60px;
   margin-top: -15px;
 }
-.sign-up .btn-foo{
+.sign-up .btn-foo {
   display: flex;
   width: 100%;
   justify-content: center;

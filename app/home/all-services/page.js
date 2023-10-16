@@ -7,7 +7,7 @@ function AllServices() {
   return (
     <div className="all-services">
       <FlexBox
-        style={{ marginTop: "20px" }}
+        className="mt-default"
         justifyContent="start"
         alignItems="center"
         gap="20px"

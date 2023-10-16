@@ -1,5 +1,6 @@
 @import "../default-styles/fonts";
 @import "../default-styles/media-queries";
+@import "../default-styles/default-margins";
 
 * {
   font-family: "Tahoma";
@@ -8,13 +9,26 @@
   box-sizing: border-box;
 }
 
+.head-iphone-img-moz {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  padding-inline: $default-padding-inline-mobile;
+  @include mobile-size {
+    display: block;
+  }
+}
+
 .home {
-  padding-inline: 20px;
+  padding-inline: $default-padding-inline-mobile;
+  margin-top: 70px;
   @include lower-sizes {
     display: none;
   }
   @include tablet-size {
-    padding-inline: 10%;
+    padding-inline: $default-padding-inline-tablet;
   }
   @include desktop-size {
     display: none;

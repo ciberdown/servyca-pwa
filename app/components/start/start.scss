@@ -1,5 +1,6 @@
 @import "../../default-styles/_fonts.scss";
 @import "../../default-styles/media-queries";
+@import "../../default-styles/default-margins";
 
 * {
   margin: 0;
@@ -10,9 +11,9 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  padding: 20px;
+  padding-inline: $default-padding-inline-mobile;
   @include tablet-size {
-    width: 80%;
+    padding-inline: $default-padding-inline-tablet;
   }
   @include desktop-size {
     display: none;

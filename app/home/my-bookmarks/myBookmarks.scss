@@ -1,5 +1,6 @@
-@import "../default-styles/fonts";
-@import "../default-styles/media-queries";
+@import "../../default-styles/fonts";
+@import "../../default-styles/media-queries";
+@import "../../default-styles/default-margins";
 
 * {
   margin: 0;
@@ -8,9 +9,13 @@
   box-sizing: border-box;
 }
 .my-bookmarks {
-  padding-inline: 20px;
+  padding-inline: $default-padding-inline-mobile;
+  margin-top: $default-margin-top;
   @include lower-sizes {
     display: none;
+  }
+  @include tablet-size {
+    padding-inline: $default-padding-inline-tablet;
   }
   @include desktop-size {
     display: none;
