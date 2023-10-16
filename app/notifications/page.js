@@ -3,15 +3,13 @@ import Back from "../components/back/back";
 import FlexBox from "../components/flex/flexBox";
 import "./notifications.scss";
 import NotifCard from "../components/card/notifCard";
+import IphoneHeaderImg from "../components/iphoneHeaderImg/IphoneHeaderImg";
 
 function Notifications() {
   return (
     <div className="notifications-con">
-      <FlexBox
-        justifyContent="start"
-        alignItems="center"
-        gap="20px"
-      >
+      <IphoneHeaderImg />
+      <FlexBox justifyContent="start" alignItems="center" gap="20px">
         <Back
           href="/home"
           style={{

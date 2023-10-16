@@ -4,11 +4,13 @@ import Back from "@/app/components/back/back";
 import SelectionPart from "@/app/components/selectionPart/SelectionPart";
 import { cardProfiles } from "@/public/constants/cardInfos";
 import Card from "@/app/components/card/Card";
+import IphoneHeaderImg from "../components/iphoneHeaderImg/IphoneHeaderImg";
 
 function MostPopularServices() {
   const data = cardProfiles;
   return (
     <div className="most-popular-services">
+      <IphoneHeaderImg />
       <FlexBox justifyContent="start" alignItems="center" gap="20px">
         <Back
           href="/home"

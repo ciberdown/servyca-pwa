@@ -1,0 +1,19 @@
+@import "../../default-styles/media-queries";
+@import "../../default-styles/default-margins";
+
+.ipho--foo {
+  width: 100%;
+  padding-inline: $default-padding-inline-mobile;
+  position: fixed;
+  left: 0;
+  top: 0;
+  @include lower-sizes {
+    display: none;
+  }
+  @include tablet-size {
+    display: none;
+  }
+  @include desktop-size {
+    display: none;
+  }
+}

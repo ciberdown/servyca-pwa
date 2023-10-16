@@ -1,24 +1,24 @@
 @import "../default-styles/default-margins";
+@import "../default-styles/fonts";
 @import "../default-styles/media-queries";
 
-* {
-  @include all-margin-padding-0;
-}
-.special-offers {
-  margin-top: $default-margin-top;
+.cleaning {
   padding-inline: $default-padding-inline-mobile;
+  margin-top: $default-margin-top;
+
   @include lower-sizes {
     display: none;
   }
   @include tablet-size {
     padding-inline: $default-padding-inline-tablet;
   }
+
   @include desktop-size {
     display: none;
   }
 }
 
-.special-offers .head-mb-foo {
+.cleaning .head-mb-foo {
   text-transform: capitalize;
   font-family: "Tahoma bold";
   color: #000;

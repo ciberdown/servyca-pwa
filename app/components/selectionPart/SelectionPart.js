@@ -26,7 +26,7 @@ function SelectionPart({ marginTop = null }) {
                 : "item none-selected"
             }
           >
-            <p>{item}</p>
+            <p>{item.text}</p>
           </div>
         );
       })}

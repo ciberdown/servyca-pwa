@@ -5,11 +5,13 @@ import "./myBookmarks.scss";
 import SelectionPart from "../components/selectionPart/SelectionPart";
 import { cardProfiles } from "@/public/constants/cardInfos";
 import Card from "../components/card/Card";
+import IphoneHeaderImg from "../components/iphoneHeaderImg/IphoneHeaderImg";
 
 function MyBookmarks() {
   const data = cardProfiles;
   return (
     <div className="my-bookmarks">
+      <IphoneHeaderImg />
       <FlexBox justifyContent="start" alignItems="center" gap="20px">
         <Back
           href="/home"
