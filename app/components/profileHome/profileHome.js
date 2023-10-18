@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./profile.scss";
+import "./profileHome.scss";
 
 function Profile({ style = null }) {
   return (

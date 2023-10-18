@@ -1,6 +1,6 @@
 import FlexBox from "../components/flex/flexBox";
 import LineContainer from "../components/lineContainer/lineContainer";
-import Profile from "../components/profile/profile";
+import Profile from "../components/profileHome/profileHome";
 import SelectionPart from "../components/selectionPart/SelectionPart";
 import "./home.scss";
 import ServicesPart from "../components/servicesPart/Services";
@@ -14,7 +14,9 @@ function Home() {
   const profiles = cardProfiles;
   return (
     <div className="home">
+
       <Profile />
+
       <section className="input-con">
         <input type="text" placeholder="Search" />
         <img src="/assets/images/image 7.png" alt="search icon" />

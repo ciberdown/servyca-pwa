@@ -1,0 +1,74 @@
+@import "../../default-styles/default-margins";
+@import "../../default-styles/fonts";
+@import "../../default-styles/media-queries";
+
+* {
+  @include all-margin-padding-0;
+}
+
+.profile-container {
+  margin-top: $default-margin-top;
+  padding-inline: $default-padding-inline-mobile;
+
+  @include lower-sizes {
+    display: none;
+  }
+  @include tablet-size {
+    padding-inline: $default-padding-inline-tablet;
+  }
+  @include desktop-size {
+    display: none;
+  }
+}
+
+.profile-container .head-mb-foo {
+  text-transform: capitalize;
+  font-family: "Tahoma bold";
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.792px;
+}
+
+.profile-head-container {
+  position: relative;
+  margin-top: 30px;
+}
+
+.profile-container .profile-image {
+  width: 105px;
+  height: 104px;
+}
+.profile-container .tick-con {
+  position: absolute;
+  bottom: 50px;
+  right: 25px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #7210ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-container .profile-tick-image {
+  width: 13px;
+  height: 13px;
+}
+.profile-container .profile-name {
+  text-transform: capitalize;
+  font-family: "Tahoma bold";
+  color: #07030c;
+  font-size: 16px;
+  letter-spacing: 0.896px;
+}
+
+.profile-container > hr {
+  border: none;
+  height: 1px;
+  background-color: #f2eded;
+}
+
+.prof-setting-text {
+  font-size: 16px;
+  letter-spacing: 1.3px;
+}
