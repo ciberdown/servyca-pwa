@@ -17,7 +17,7 @@ function ProfileMain() {
           paddingInline: "10px",
         }}
       >
-        <ProfileItem text="Edit profile" icon="profile-icon.png" href="/" />
+        <ProfileItem text="Edit profile" icon="profile-icon.png" href="/edit-profile" />
         <ProfileItem
           text="Notification"
           icon="notification-icon.png"
