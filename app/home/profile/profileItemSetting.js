@@ -6,7 +6,7 @@ function ProfileItem({ text, icon, href, children }) {
   return (
     <FlexBox justifyContent="space-between" style={{ marginTop: "-120px" }}>
       <FlexBox style={{ display: "flex" }} gap="20px">
-        <img src={"/assets/images/" + icon} />
+        <img style={{width:'24px',height:'24px'}} src={"/assets/images/" + icon} />
         <h1 className="prof-setting-text">{text}</h1>
       </FlexBox>
 

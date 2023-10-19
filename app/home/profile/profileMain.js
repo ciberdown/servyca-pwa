@@ -17,18 +17,30 @@ function ProfileMain() {
           paddingInline: "10px",
         }}
       >
-        <ProfileItem text="Edit profile" icon="" href="/" />
-        <ProfileItem text="Notification" icon="" href="/" />
-        <ProfileItem text="Payment" icon="" href="/" />
-        <ProfileItem text="Security" icon="" href="/" />
-        <ProfileItem text="Language" icon="">
+        <ProfileItem text="Edit profile" icon="profile-icon.png" href="/" />
+        <ProfileItem
+          text="Notification"
+          icon="notification-icon.png"
+          href="/"
+        />
+        <ProfileItem text="Payment" icon="payment-icon.png" href="/" />
+        <ProfileItem text="Security" icon="security-icon.png" href="/" />
+        <ProfileItem text="Language" icon="lan-icon.png">
           <p>{data.lang}</p>
           <Forward href="/" style={{ marginBottom: "60px" }} />
         </ProfileItem>
-        <ProfileItem text="Dark mode" icon="" href="/" />
-        <ProfileItem text="Privacy policy" icon="" href="/" />
-        <ProfileItem text="Help center" icon="" href="/" />
-        <ProfileItem text="Invite friends" icon="" href="/" />
+        <ProfileItem text="Dark mode" icon="dark-mode-icon.png" href="/" />
+        <ProfileItem
+          text="Privacy policy"
+          icon="privacy-policy-icon.png"
+          href="/"
+        />
+        <ProfileItem text="Help center" icon="help-icon.png" href="/" />
+        <ProfileItem
+          text="Invite friends"
+          icon="add-friends-icon.png"
+          href="/"
+        />
       </FlexBox>
       <FlexBox
         justifyContent="start"
@@ -36,10 +48,14 @@ function ProfileMain() {
         style={{
           marginTop: "-30px",
           marginBottom: "100px",
-          paddingInline:'10px'
+          paddingInline: "14px",
         }}
       >
-        <img src="/assets/images/some" alt=" " />
+        <img
+          style={{ width: "22px" }}
+          src="/assets/images/log-out-icon.png"
+          alt=" "
+        />
         <p style={{ color: "red" }} className="prof-setting-text">
           Logout
         </p>
