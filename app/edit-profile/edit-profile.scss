@@ -7,6 +7,7 @@
 }
 
 .edit-profile-part {
+  overflow-y: scroll;
   margin-top: $default-margin-top;
   padding-inline: $default-padding-inline-mobile;
   @include lower-sizes {
@@ -50,4 +51,9 @@
     font-size: 15px;
     opacity: 0.25;
   }
+}
+
+.calendar-select-con {
+  display: none;
+  height: 0px;
 }
