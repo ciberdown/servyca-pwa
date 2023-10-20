@@ -1,0 +1,65 @@
+@import "../../default-styles/default-margins";
+@import "../../default-styles/fonts";
+@import "../../default-styles/media-queries";
+
+* {
+  @include all-margin-padding-0;
+}
+
+.house-cleaning-moz {
+  margin-top: $default-margin-top;
+  padding-inline: $default-padding-inline-mobile;
+  @include lower-sizes {
+    display: none;
+  }
+  @include tablet-size {
+    padding-inline: $default-padding-inline-tablet;
+  }
+  @include desktop-size {
+    display: none;
+  }
+}
+
+.house-cleaning-moz .head-mb-foo {
+  text-transform: capitalize;
+  font-family: "Tahoma bold";
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.792px;
+}
+.house-cleaning-moz .moz-foo-clean {
+  margin-top: 26px;
+  margin-left: 5px;
+  color: #100101bd;
+  font-size: 15px;
+}
+
+.house-cleaning-moz .house-item-bar {
+  width: 100%;
+  padding-inline: 20px;
+  height: 58px;
+  border-radius: 20px;
+  background: #fbfff1;
+  box-shadow: 3px 1px 7.5px 0px rgba(0, 0, 0, 0.16);
+}
+
+.house-item-bar .circle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #7410ff15;
+}
+.house-item-bar .circle-btn p {
+  color: #7210ff;
+  font-family: "Tahoma bold";
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.house-item-bar .num-bar {
+  color: #4c00b5;
+  font-size: 15px;
+}
