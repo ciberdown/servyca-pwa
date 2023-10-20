@@ -19,6 +19,7 @@
   @include desktop-size {
     display: none;
   }
+  margin-bottom: 30px;
 }
 
 .edit-profile-part .head-mb-foo {
@@ -54,6 +55,9 @@
 }
 
 .calendar-select-con {
+  box-sizing: border-box;
   display: none;
   height: 0px;
+  border: 0;
+  width: 0px;
 }

@@ -84,11 +84,13 @@ function EditProfile() {
         <ProfItemInput icon="password-icon.png" text="password" />
       </FlexBox>
 
-      <CustomStartBtn
-        text="Update"
-        reference="/"
-        style={{ marginTop: "70px" }}
-      />
+      <FlexBox justifyContent="center">
+        <CustomStartBtn
+          text="Update"
+          reference="/"
+          style={{ marginTop: "70px" }}
+        />
+      </FlexBox>
 
       <CalendarSelect
         dataHandle={dataHandle}

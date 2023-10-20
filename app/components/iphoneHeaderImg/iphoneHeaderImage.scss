@@ -3,6 +3,7 @@
 
 .ipho--foo {
   width: 100%;
+  z-index: 100;
   padding-inline: $default-padding-inline-mobile;
   position: fixed;
   left: 0;
