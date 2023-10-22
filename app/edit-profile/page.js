@@ -92,11 +92,14 @@ function EditProfile() {
         />
       </FlexBox>
 
-      <CalendarSelect
-        dataHandle={dataHandle}
-        openPicker={openPicker}
-        onClose={onClose}
-      />
+      {openPicker && (
+        <CalendarSelect
+          classname="calendar-select-con"
+          close={onClose}
+          date={date}
+          setDate={setDate}
+        />
+      )}
     </div>
   );
 }

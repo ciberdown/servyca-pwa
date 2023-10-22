@@ -55,9 +55,13 @@
 }
 
 .calendar-select-con {
-  box-sizing: border-box;
-  display: none;
-  height: 0px;
-  border: 0;
-  width: 0px;
+  position: fixed;
+  bottom: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.calendar {
+  z-index: 101;
+  background-color: #eadbff;
+  border-radius: 24px;
 }

@@ -1,23 +1,34 @@
-import React from "react";
-import "@mobiscroll/react/dist/css/mobiscroll.min.css";
-import { Datepicker, Page, setOptions } from "@mobiscroll/react";
+import * as React from "react";
+import dayjs from "dayjs";
+import { DemoItem } from "@mui/x-date-pickers/internals/demo";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import "./edit-profile.scss";
 
-setOptions({
-  theme: "ios",
-  themeVariant: "light",
-});
+function CalendarSelect({
+  classname = null,
+  close,
+  date = new Date(),
+  setDate,
+  style = undefined,
+}) {
+  const changeCalendarHandle = (newDate) => {
+    setDate(newDate.$y + "/" + newDate.$M + "/" + newDate.$D);
 
-function CalendarSelect({ dataHandle, openPicker, onClose }) {
+    close();
+  };
   return (
-    <Page class="calendar-select-con">
-      <Datepicker
-        onCancel={onClose}
-        onCellClick={dataHandle}
-        controls={["calendar"]}
-        isOpen={openPicker}
-      />
-    </Page>
+    <div style={style} className={"calendar " + classname}>
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <DemoItem>
+          <DateCalendar
+            value={dayjs(date)}
+            onChange={(newVal) => changeCalendarHandle(newVal)}
+          />
+        </DemoItem>
+      </LocalizationProvider>
+    </div>
   );
 }
 
