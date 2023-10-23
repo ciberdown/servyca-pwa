@@ -13,3 +13,42 @@
     padding-inline: $default-padding-inline-tablet;
   }
 }
+
+.circle-foo {
+  box-sizing: border-box;
+  width: 19px;
+  height: 19px;
+  border: 4px solid #7210ff;
+  border-radius: 50%;
+}
+
+.method-item {
+  padding: 10px;
+  height: 58px;
+  flex-shrink: 0;
+  border: 1px solid rgba(53, 44, 44, 0.064);
+  border-radius: 20px;
+  box-shadow: 6px 7px 4.5px 0px rgba(0, 0, 0, 0.16);
+  @include tablet-size {
+    padding-inline: 30px;
+  }
+}
+.selected {
+  background-color: #7210ff;
+}
+.method {
+  color: #100101;
+  font-size: 15px;
+}
+img {
+  width: 20px;
+  height: 18px;
+}
+
+#sel-foo-bar {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #100101;
+  font-size: 15px;
+  opacity: 0.4;
+}

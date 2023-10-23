@@ -1,0 +1,44 @@
+@import "../../default-styles/default-margins";
+@import "../../default-styles/fonts";
+@import "../../default-styles/media-queries";
+
+* {
+  @include all-margin-padding-0;
+}
+
+.booking-review {
+  margin-top: $default-margin-top;
+  padding-inline: $default-padding-inline-mobile;
+  @include tablet-size {
+    padding-inline: $default-padding-inline-tablet;
+  }
+}
+.rev-card {
+  border-radius: 18px;
+  border: 1px solid #707070;
+  background: #fff;
+  padding: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 6px 10px 3.5px 0px rgba(0, 0, 0, 0.16);
+}
+.booking-review p {
+  color: #030007;
+  font-size: 15px;
+  opacity: 0.59;
+}
+.booking-review h2 {
+  color: #030007;
+  font-family: "Tahoma bold";
+  font-size: 14px;
+}
+.booking-review h3 {
+  color: #7210ff;
+  font-size: 15px;
+}
+.booking-review hr {
+  margin-inline: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  height: 1px;
+  box-sizing: border-box;
+}

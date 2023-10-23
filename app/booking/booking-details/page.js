@@ -17,7 +17,6 @@ function BookingDetails() {
   return (
     <div className="booking-details-con">
       <IphoneHeaderImg />
-      =
       <BackHeader text="booking details" />
       <h2 id="book-details-text">Select date</h2>
       <FlexBox justifyContent="center">
