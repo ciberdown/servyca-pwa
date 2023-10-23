@@ -3,10 +3,10 @@
 import IphoneHeaderImg from "@/app/components/iphoneHeaderImg/IphoneHeaderImg";
 import "./houseCleaning.scss";
 import FlexBox from "@/app/components/flex/flexBox";
-import Back from "@/app/components/back/back";
 import CustomStartBtn from "@/app/components/custom-start-btn/CustomStartBtn";
 import { useState } from "react";
 import HouseCleanItem from "./HouseCleanItem";
+import BackHeader from "@/app/components/backHeader/BackHeader";
 
 function HouseCleaning() {
   const data = [
@@ -25,23 +25,12 @@ function HouseCleaning() {
   return (
     <div className="house-cleaning-moz">
       <IphoneHeaderImg />
-      <FlexBox justifyContent="start" alignItems="center" gap="20px">
-        <Back
-          href="/home"
-          style={{
-            position: "static",
-            margin: "0",
-            padding: "0",
-            width: "15px",
-            height: "15px",
-            marginTop: "10px",
-          }}
-        />
-        <h1 className="head-mb-foo">House cleaning</h1>
-      </FlexBox>
+
+      <BackHeader text="House cleaning" />
+
       <p className="moz-foo-clean">Enter the number of terms to be cleaned</p>
 
-      <FlexBox flexDirection="column" gap="25px" style={{marginTop:"20px"}}>
+      <FlexBox flexDirection="column" gap="25px" style={{ marginTop: "20px" }}>
         {data.map((item, index) => {
           return <HouseCleanItem key={index} text={item} />;
         })}

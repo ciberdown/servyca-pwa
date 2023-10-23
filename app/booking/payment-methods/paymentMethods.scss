@@ -1,11 +1,12 @@
-@import "../default-styles/fonts";
-@import "../default-styles/default-margins";
-@import "../default-styles/media-queries";
+@import "../../default-styles/default-margins";
+@import "../../default-styles/fonts";
+@import "../../default-styles/media-queries";
 
 * {
   @include all-margin-padding-0;
 }
-.most-popular-services {
+
+.payment-methods {
   margin-top: $default-margin-top;
   padding-inline: $default-padding-inline-mobile;
   @include tablet-size {

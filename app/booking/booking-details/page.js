@@ -2,7 +2,6 @@
 
 import IphoneHeaderImg from "@/app/components/iphoneHeaderImg/IphoneHeaderImg";
 import "./bookingDetails.scss";
-import Back from "@/app/components/back/back";
 import FlexBox from "@/app/components/flex/flexBox";
 import CalendarSelect from "@/app/edit-profile/calendar-select";
 import { useState } from "react";
@@ -10,6 +9,7 @@ import HouseCleanItem from "../house-cleaning/HouseCleanItem";
 import SelectionPart from "@/app/components/selectionPart/SelectionPart";
 import PromoCodeEnter from "./promoCodeEnter";
 import CustomStartBtn from "@/app/components/custom-start-btn/CustomStartBtn";
+import BackHeader from "@/app/components/backHeader/BackHeader";
 
 function BookingDetails() {
   const totalPrice = "123$";
@@ -17,21 +17,8 @@ function BookingDetails() {
   return (
     <div className="booking-details-con">
       <IphoneHeaderImg />
-      <FlexBox justifyContent="start" alignItems="center" gap="20px">
-        <Back
-          href="/home"
-          style={{
-            position: "static",
-            margin: "0",
-            padding: "0",
-            width: "15px",
-            height: "15px",
-            marginTop: "10px",
-          }}
-        />
-        <h1 className="head-mb-foo">booking details</h1>
-      </FlexBox>
-
+      =
+      <BackHeader text="booking details" />
       <h2 id="book-details-text">Select date</h2>
       <FlexBox justifyContent="center">
         <CalendarSelect
@@ -40,7 +27,6 @@ function BookingDetails() {
           style={{ marginTop: "20px" }}
         />
       </FlexBox>
-
       <HouseCleanItem style={{ marginTop: "25px" }} text="working hours" />
       <h2 id="book-details-text">Choose start time</h2>
       <SelectionPart
@@ -53,11 +39,8 @@ function BookingDetails() {
           { text: "11:00 AM" },
         ]}
       />
-
       <h2 id="book-details-text">Promo code</h2>
-
       <PromoCodeEnter />
-
       <CustomStartBtn
         text={"Countinue" + totalPrice}
         style={{

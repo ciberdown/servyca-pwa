@@ -1,28 +1,15 @@
 import { notifs } from "@/public/constants/notifications";
-import Back from "../components/back/back";
-import FlexBox from "../components/flex/flexBox";
 import "./notifications.scss";
 import NotifCard from "../components/card/notifCard";
 import IphoneHeaderImg from "../components/iphoneHeaderImg/IphoneHeaderImg";
+import BackHeader from "../components/backHeader/BackHeader";
 
 function Notifications() {
   return (
     <div className="notifications-con">
       <IphoneHeaderImg />
-      <FlexBox justifyContent="start" alignItems="center" gap="20px">
-        <Back
-          href="/home"
-          style={{
-            position: "static",
-            margin: "0",
-            padding: "0",
-            width: "15px",
-            height: "15px",
-            marginTop: "10px",
-          }}
-        />
-        <h1 className="head-mb-foo">notifications</h1>
-      </FlexBox>
+
+      <BackHeader text="notifications" />
 
       <div className="notif-card-con">
         <p className="notif-today-p">today</p>
