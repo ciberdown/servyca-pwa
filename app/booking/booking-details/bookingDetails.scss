@@ -1,0 +1,62 @@
+@import "../../default-styles/default-margins";
+@import "../../default-styles/fonts";
+@import "../../default-styles/media-queries";
+
+* {
+  @include all-margin-padding-0;
+}
+
+.booking-details-con {
+  margin-top: $default-margin-top;
+  padding-inline: $default-padding-inline-mobile;
+  @include tablet-size {
+    padding-inline: $default-padding-inline-tablet;
+  }
+}
+
+.booking-details-con .head-mb-foo {
+  text-transform: capitalize;
+  font-family: "Tahoma bold";
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.792px;
+}
+.booking-details-con #book-details-text {
+  color: #100101;
+  font-family: "Tahoma bold";
+  font-size: 15px;
+  opacity: 0.79;
+  margin-top: 20px;
+}
+.promo-code-enter {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  input {
+    flex: 8;
+    min-height: 55px;
+    background-color: #f2eded6f;
+    border: none;
+    border-radius: 20px;
+    padding-inline: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.48);
+    }
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7410ff15;
+    border-radius: 100%;
+    font-family: "Tahoma bold";
+    font-size: 15px;
+    width: 27px;
+    height: 28px;
+    margin-bottom: 3px;
+  }
+}

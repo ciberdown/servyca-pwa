@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./houseCleaning.scss";
 import FlexBox from "@/app/components/flex/flexBox";
 
-function HouseCleanItem({ text }) {
+function HouseCleanItem({ text, style = null }) {
   const [number, setNumber] = useState(0);
   function increase() {
     setNumber((prev) => {
@@ -17,7 +17,11 @@ function HouseCleanItem({ text }) {
       });
   }
   return (
-    <FlexBox className="house-item-bar" justifyContent="space-between">
+    <FlexBox
+      style={style}
+      className="house-item-bar"
+      justifyContent="space-between"
+    >
       <p>{text}</p>
       <FlexBox gap="10px">
         <section onClick={decrease} className="circle-btn">

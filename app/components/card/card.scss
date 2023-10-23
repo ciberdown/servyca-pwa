@@ -88,3 +88,20 @@ $color: #7210ff;
   font-size: 12px;
   letter-spacing: 0.66px;
 }
+
+.selection-part {
+  box-sizing: border-box;
+  border-radius: 50%;
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  z-index: 10;
+}
+
+.selected-card { background-color: #7210ff;
+}
+.unselected-card {
+  border: 4px solid #7210ff;
+}

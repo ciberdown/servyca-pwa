@@ -1,0 +1,23 @@
+@import "../../default-styles/default-margins";
+@import "../../default-styles/fonts";
+@import "../../default-styles/media-queries";
+
+* {
+  @include all-margin-padding-0;
+}
+
+.add-promo-con {
+  margin-top: $default-margin-top;
+  padding-inline: $default-padding-inline-mobile;
+  @include tablet-size {
+    padding-inline: $default-padding-inline-tablet;
+  }
+}
+
+.add-promo-con .head-mb-foo {
+  text-transform: capitalize;
+  font-family: "Tahoma bold";
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.792px;
+}

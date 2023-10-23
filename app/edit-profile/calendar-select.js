@@ -8,7 +8,7 @@ import "./edit-profile.scss";
 
 function CalendarSelect({
   classname = null,
-  close,
+  close = null,
   date = new Date(),
   setDate,
   style = undefined,
@@ -16,14 +16,14 @@ function CalendarSelect({
   const changeCalendarHandle = (newDate) => {
     setDate(newDate.$y + "/" + newDate.$M + "/" + newDate.$D);
 
-    close();
+    close && close();
   };
   return (
     <div style={style} className={"calendar " + classname}>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DemoItem>
           <DateCalendar
-            value={dayjs(date)}
+            value={dayjs(new Date())}
             onChange={(newVal) => changeCalendarHandle(newVal)}
           />
         </DemoItem>
